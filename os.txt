@@ -1,0 +1,45 @@
+#printing your name in results
+echo "Hey this is my first shell script program "
+echo "what is your name ? : "
+PERSON="johnWick" 
+
+echo "Hello, $PERSON"
+#reading a numerical value by passing it value
+newPerson=100
+echo newPerson
+#reading a value for stdin
+read Person1 
+echo "Hey, $Person1"
+
+#program to print wheather the number is even or odd
+echo "Enter the number "
+read num 
+rem=`expr $num % 2`
+if [ $rem -eq 0 ]
+then 
+    echo "$num is even number"
+else
+    echo "$num is odd number"
+fi
+
+#program to compute the basic maths calculation 
+echo "program to compute the basic calculation : "
+#echo "Enter your First Value : "
+a=10
+#echo "Enter your Second value : "
+b=20
+sum=`expr $a + $b`
+echo "The sum of two numbers $a and $b :  $sum"
+diff=`expr $a - $b`
+echo "The difference is : $diff"
+pro=`expr $a * $b`
+div=`expr $a / $b`
+echo "The product is : $pro"
+echo "The module computing is  is : $div"
+
+#cheak weather the ggiven number is leap year or not 
+echo "program to cheak weather the number is leap year or not"
+read num
+cheak=`expr $num % 4`
+if [ $cheak -eq 0 ]
+then 
